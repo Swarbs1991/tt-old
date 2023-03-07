@@ -1,0 +1,539 @@
+/*
+Theme Name:ID23
+Theme URI:http://wordpress.org/
+Description:Id23 Web Design
+Author:LJ
+Version:1
+License:GNU General Public License
+License URI:license.txt
+Tags:ID23
+*/
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display:block;margin:0;padding:0;border:0}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,canvas,video {display: inline-block;}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {display: none;height: 0;}
+
+/* =Reset default browser CSS. Based on work by Eric Meyer:http://meyerweb.com/eric/tools/css/reset/index.html
+
+
+-------------------------------------------------------------- */
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {background:transparent;border:0;margin:0;padding:0;vertical-align:baseline;text-align:left}
+html{font:100%;  overflow-y: scroll;padding:0}
+body {font-family: 'Lato',Helvetica,Arial,sans-serif;font-weight:400;background:#f2f2f2;line-height:1.5;background-color:#fff}
+
+section{background-color:#fff}
+
+h1,h2,h3,h4,h5,h6,div.strapline p{font-weight:normal;padding:0;margin-bottom:0.5em;font-family:'Roboto Condensed', Arial, Helvetica, sans-serif}
+h1{font-size:2em;}
+h2{font-size:1.8em;line-height:1}
+h3{font-size:1.6em}
+h4{font-size:1.4em}
+h5{font-size:1.2em}
+h6{font-size:1em;font-weight:bold}
+p{font-size:1em;margin-bottom:1.5em;padding:0;font-family:'Lato', Helvetica,Arial,sans-serif;font-weight:normal;color:#000}
+strong{font-weight:bold}
+
+a{}
+a:link {color:#25358E;font-weight:bold;}
+a:visited {color:#25358E}
+a:active,a:hover {color:#FC0} 
+
+.query{background-color:yellow}
+
+
+h1 a:link,h2 a:link,h3 a:link,h4 a:link,h5 a:link,h6 a:link{text-decoration:none;color:#000}
+h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited{color:#000}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,h1 a:visited:hover,h2 a:visited:hover,h3 a:visited:hover,h4 a:visited:hover,h5 a:visited:hover,h6 a:visited:hover{color:#FC0}
+
+span.readmore{float:left;margin:0 1em 1em 0;display:inline-block;padding-top:0.5em;clear:both}
+span.catlist{display:block}
+span.readmore a:link,span.readmore a:visited{display:block;border-radius:0.25em;background:#265CFF;padding:0.5em;text-decoration:none;color:#fff;}
+span.readmore a:hover{background:#FC0;color:#000}
+
+ol,ul {list-style:none}
+blockquote {quotes:none}
+blockquote:before,blockquote:after {content:'';content:none}
+del {text-decoration:line-through}
+
+ul {list-style:square;margin:0 0 2em 1.5em;padding-left:2em}
+ol {list-style:decimal;margin:0 0 2em 1.5em}
+ol ol {list-style:upper-alpha}
+ol ol ol {list-style:lower-roman}
+ol ol ol ol {list-style:lower-alpha}
+ul ul,ol ol,ul ol,ol ul {margin-bottom:0}
+
+/* Miscellaneous conveniences: */ 
+a img {border:none}
+form label {cursor: pointer; } 
+fieldset {border: none; }  
+/* Form field text-scaling */ 
+input, select, textarea {font-size: 100%}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse:collapse;border-spacing:0}
+
+/*structures*/
+
+div.content{width:100%;margin:0 auto;background-color:#fff;}
+
+main{display:block;width:74.60317%;float:left;;}
+main.homemain,main.category{width:48.4375%;float:left;background:#fff}
+main.category{background:#fff}
+aside.homeside,aside.catside{width:49.20634%;float:right;}
+
+div.homeside-left,div.catside-left{float:left;width:48.387%;}
+div.homeside-right,div.catside-right{float:right;width:48.387%;}
+div.catside-right{width:40%}
+div.wrap{width:100%;float:left}
+div.header{background-color:#fff;float:left;}
+/*div.core{background-color:#008061;float:left}*/
+div.core{background-color:#fff;float:left}
+
+.wrapper{width:90%;margin:0 auto;max-width:80em;min-width:18.750em;padding:0;text-align:center;}
+
+div.inner{padding:0 0.625em;}
+header{padding:1em 0 1em 0;margin:0;float:left;width:100%;background-color:#fff;text-align:center;z-index:100;border-bottom:1px solid #eee;margin-bottom:1em}
+/*header div.logo{float:left;width:23.4375%;height:25%;}*/
+
+header div.header-branding{width:75%;float:left;}
+header div.header-utility{width:23.82%;float:right;}
+header div.logo{float:left;width:100%;}
+
+article.single{padding:1em}
+article.sticky{margin-bottom:1em;width:100%;float:left;}
+
+div.shadowbox,article.listing,aside ul ul{width:100%;margin-bottom:1em;float:left;}
+div.shadowinner{padding:1.538%;margin-bottom:0.5em;}
+
+div.footersky{background-color:#fff;float:left;background-image: url(http://theshuttle.org.uk/wp-content/uploads/skyline.png);
+background-repeat:no-repeat;background-position:top;height:230px;width:100%}
+
+div.footer{background-color:#008061;padding-top:1em}
+
+footer.footer{min-height:20em;float:left;clear:both;color:#FFF;background:#00661a;padding-top:1em;font-weight:normal;letter-spacing:-0.05em;clear:both;height:auto;width:100%;margin-top:2em;background: url(http://theshuttle.org.uk/wp-content/uploads/skyline.png)center bottom no-repeat;}
+footer.footer div.inner{margin:1em 1.041666%} 
+footer.footer p{color:#FFF;font-family: 'Lato',Helvetica,Arial,sans-serif;font-size:1em}
+footer.footer ul{list-style:none;padding:0;margin:0}
+footer.footer li ul a:link, footer.footer li ul a:visited{color:#fff;text-decoration:none;margin:0px;border-bottom:1px dotted #fff;display:block;padding:1em 0;text-align:left;font-size:0.9em;font-weight:normal}
+footer.footer li ul a:hover{color:#FC0}
+.footercol{width:31.9148%;float:left;margin-right:2.1276%;position:relative;padding-bottom:1.5em;}
+.col{width:48.936%}
+.right{float:right}
+.left{float:left}
+footer p{color:#FFF;font-family: 'Lato',Helvetica,Arial,sans-serif}
+footer ul{list-style:none;padding:0;margin:0}
+
+footer li ul a:link, footer li ul a:visited{color:#fff;text-decoration:none;margin:0px;border-bottom:1px dotted #fff;display:block;padding:1em 0;text-align:left;font-size:0.9em;font-weight:normal}
+footer li ul a:hover{color:#FC0}
+
+.taglist {background:none;clear:both;float:left;border:1px dotted #eee;border-left:none;border-right:0;width:100%;padding:0.5em 0;margin-bottom:1em}
+.taglist p{margin-bottom:0;padding-bottom:0}
+
+
+div.content{height:15em;margin-top:1em}
+
+
+ .corenav{padding:0;}
+/*nav#core-nav{width:100%;float:left;clear:both;background-color:#008061}
+
+#core-nav ul{float:left}
+#core-nav ul,.socmed ul, ul.taglist {list-style:none;margin:0;padding:0;width:100%;background:#008061}
+#core-nav li{width:16.66%;display:block;float:left;margin:0;}
+#core-nav li a{transition: all 0.3s linear;display:block;font-family:"Roboto Condensed",Arial, Helvetica, sans-serif;font-size:1em;text-decoration:none;color:#fff;text-align:center;padding:1em 0;margin:0;}
+#core-nav li a:hover{background:#FC0}*/
+
+nav#core-nav{width:100%;float:left;clear:both;background-color:#FFF;}
+
+
+
+
+#core-nav ul{float:left}
+#core-nav ul {list-style:none;margin:0;padding:0;width:100%;background:#fff}
+#core-nav li{width:19.2%;display:block;float:left;margin:0 0.5%}
+#core-nav li a{display:block;font-family:"Roboto Condensed",Arial, Helvetica, sans-serif;font-size:1.2em;letter-spacing:1px;text-decoration:none;color:#FFF;text-align:center;padding:0.5em 0;margin:0;font-weight:normal}
+#core-nav li{background-color:#25358E}
+#core-nav li#home{margin-left:0;padding-left:0;}
+#core-nav li#index{margin-right:0;padding-left:0}
+
+
+
+#core-nav li a:hover{background-color:#FC0}
+
+#core-nav li#news,#core-nav li#download{background-color:#0D8669}
+
+article.listing {width:100%;float:left;clear:both;margin-bottom:1em;background:#fff}
+article.listing h3 {font-weight:700;}
+article.listing h3 a, article.listing h4 a{text-decoration:none;letter-spacing:-0.063em}
+article.listing h4 {font-size:1.4em}
+article.listing p, section p{font-size:1em;font-family: 'Lato',Helvetica,Arial,sans-serif;font-weight:normal}
+  
+aside{position:relative}
+aside.allside{width:23.809%;float:right;}
+
+aside h3{color:#fff;background:#000;margin:0;padding:0.15em 0.70em;font-size:1.3em;letter-spacing:-0.03em;clear:both;} 
+aside ul{list-style-type:none;margin:0px;padding:0;margin-bottom:1em;width:100%}
+aside ul ul{border-bottom:none;margin-top:0}
+aside li ul a:link, aside li ul a:visited{background-color:#eee;color:#000;text-decoration:none;margin:0px;border:1px solid silver;border-top:none;display:block;padding:1em;text-align:left;font-size:1em;font-weight:normal;}
+aside li ul a:hover,aside li ul a:visited:hover {color:#000;background-color:#eee}
+
+div.catmenu{background:#fff;width:100%;float:left;}
+aside ul#menu-categories{}
+aside ul#menu-categories li{}
+aside ul#menu-categories li a:link{padding-left:3em;background-repeat: no-repeat;background-position:1em;}
+
+aside ul#menu-categories li.red a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-red.png);background-repeat: no-repeat;background-position:1em;} 
+aside ul#menu-categories li.orange a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-orange.png);}
+aside ul#menu-categories li.yellow a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-yellow.png);}
+aside ul#menu-categories li.green a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-green.png);}
+aside ul#menu-categories li.blue a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-blue.png);}
+aside ul#menu-categories li.indigo a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-indigo.png);}
+aside ul#menu-categories li.violet a:link{background-image:url(http://www.theshuttle.org.uk/wp-content/themes/id23/images/bullet-violet.png);}
+
+aside ul#menu-categories li.lime a:link{background-image:url(http://theshuttle.org.uk/wp-content/uploads/lime.png);}
+
+.third{margin-right:0}
+ 
+span.screen-reader-text{display:none}
+
+.skip-link{display:none}
+
+iframe.vidtest{width:100%}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 1.5em;
+	height: 0;
+	margin-bottom:1.5em;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.sd-social-icon .sd-content ul li[class*='share-'] a,
+.sd-social-icon .sd-content ul li[class*='share-'] a:hover,
+.sd-social-icon .sd-content ul li[class*='share-'] div.option a {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+
+
+div.sharedaddy h3.sd-title {
+	margin: 0 0 1em 0;
+	display: inline-block;
+	line-height: 1.2;
+	font-size: 1em !important;
+	font-weight: normal !important;
+}
+
+div.sharedaddy h3.sd-title:before {
+	content: "";
+	display: block;
+	width: 100%;
+	min-width: 30px;
+	border-top: none !important;
+	margin-bottom: 1em;
+}
+
+
+
+img {max-width: 100%;height: auto;width: auto; }
+img{ -ms-interpolation-mode: bicubic; }
+div.small-stickys{float:left;width:100%}
+div.small-sticky{width:48%;background-color:#fff}
+.small-sticky-list{background-color:#fff;margin-bottom:1em}
+.left{float:left}
+.right{float:right}
+.small-sticky h2,.small-sticky-list h2{font-size:1.2em;color:#000;background-color:#fff;width:100%;;float:left;}
+.small-sticky p,.small-sticky-list p{font-size:0.9em}
+div.inside{padding:1em}
+.pubdate{font-size:0.8em}
+li.widget_sp_image{margin-top:1em;border-top:1px solid #25358E;background-color:none !important}
+article.sticky{}
+div.sticky-inner{width:100%;position:relative;}
+
+article.sticky h2{font-size:2em;width:100%;color:#fff;background-color:#000;display:block;}
+
+article.small-sticky-list h2{width:100%;color:#fff;background-color:#000}
+article.small-sticky-list h2 a:link,article.small-sticky-list h2 a:visited,article.sticky h2 a:link, article.sticky h2 a:visited{color:#fff;padding-top:0.5em;padding-bottom:0.5em;padding-left:0.5em;display:block}
+article.sticky p{font-weight:bold;font-size:1em}
+article.sticky div.excerpt{padding:0.5em;float:left;margin-top:-0.5em}
+
+article.sticky h2 a:hover,article.small-sticky-list h2 a:hover{color:#FC0}
+.res-sticky{width:100%;height:auto;float:left}
+.res-sticky img{width:100%}
+.res-featured{width:48%;height:auto;float:right;margin-bottom:1.5em;margin-left:1.5em;border:1px solid #eee}
+.res-featured img{width:96%;margin:2%}
+.res-thumbnail{width:46.774%;height:auto;float:right;margin:0 0 1em 1.5625%;padding:0}
+.res-smallstickylist{width:46.774%;float:right;margin:0 0 1em 1em}
+
+p.caption{text-align:center;padding:0.5em 1em;font-size:0.9em;font-weight:bold}
+
+div.the_content p:first-child{font-weight:bold;font-size:1.2em}
+
+div.downloads, div.tags{margin-top:1em;clear:both}
+
+/*img.size-half{max-width:50% !important;height:auto;}
+img.size-quarter{max-width:25% !important;height:auto;}
+img.size-fullwidth{max-width:100% !important;height:auto;}
+img.size-3quarter{max-width:75% !important;height:auto;}
+.alignleft,img.alignleft {display:inline;float:left;margin-right:1.06382%;margin-top:0.5em}
+.alignright,img.alignright {display:inline;float:right;margin-left:1.06382%;margin-top:0.5em}
+.aligncenter,img.aligncenter {clear:both;display:block;margin-left:auto;margin-right:auto}
+img.alignleft,img.alignright,img.aligncenter {margin-bottom:1em}*/
+
+.wpsh_item{float:right !important}
+
+div.wpcf7 form *{margin:0;padding:0}
+div.wpcf7{width:100%;margin:0 auto}
+div.wpcf7 form{}
+div.wpcf7 form label{font-size:1.1em;font-weight:bold;display:block;margin-top:1em}
+div.wpcf7 form div.details{float:left;width:48.936%}
+div.wpcf7 form div.message{float:right;width:48.936%}
+div.wpcf7 form input, div.wpcf7 form textarea{width:99%;margin-bottom:0;height:2em;background:#FFF;font-family: 'Lato',Helvetica,Arial,sans-serif}
+div.wpcf7 form textarea{height:15em}
+div.wpcf7 form legend{font-size:1.4em;font-weight:bold;margin-bottom:0}
+span.wpcf7-not-valid-tip{color:#900;display:block;margin:0;padding:0}
+div.wpcf7 form div.wpcf7-validation-errors{background:none;font-weight:bold;color:#900}
+div.wpcf7 form div.wpcf7-mail-sent-ok{background:#FFF;font-weight:bold;color:#090}
+div.wpcf7 form div.wpcf7-response-output{margin:1.5em 0;padding:1em;background:none;width:45%;float:right;}
+.wpcf7-submit{width:23% !important;float:right;font-size:1em}
+
+
+.dataTables_wrapper{clear:both;margin-bottom:1em}
+.dataTables_wrapper .tablepress{clear:both;margin:0!important}
+.dataTables_length{float:left;white-space:nowrap}
+.dataTables_filter{float:right;white-space:nowrap}
+.dataTables_info{clear:both;float:left;margin:4px 0 0}
+.dataTables_paginate{float:right;margin:4px 0 0;padding:0 15px}
+.dataTables_paginate a{color:#111!important;display:inline-block;border:0;position:relative;text-decoration:underline;text-decoration:none\0/IE}
+.dataTables_paginate .paginate_disabled_previous,.dataTables_paginate .paginate_disabled_next{color:#999!important;text-decoration:none}
+
+.dataTables_processing{display:none}
+.dataTables_scroll{clear:both}
+.dataTables_scrollBody{-webkit-overflow-scrolling:touch}
+.dataTables_wrapper .sorting,.dataTables_wrapper .sorting_asc,.dataTables_wrapper .sorting_desc{padding-right:20px;cursor:pointer;border:0}
+.dataTables_wrapper .sorting div,.dataTables_wrapper .sorting_asc div,.dataTables_wrapper .sorting_desc div{position:relative;margin:0!important;padding:0!important;float:none!important}
+.dataTables_wrapper .sorting div:after,.dataTables_wrapper .sorting_asc div:after,.dataTables_wrapper .sorting_desc div:after{font-family:TablePress;font-weight:400;font-size:14px;-webkit-font-smoothing:antialiased;position:absolute;top:0;bottom:0;left:auto;right:-14px;margin:auto;height:14px;line-height:1;padding:1px 0 0}
+.dataTables_wrapper .sorting div:after{content:"\f0dc"}
+.dataTables_wrapper .sorting_asc div:after{content:"\f0d8";padding:0 0 1px}
+.dataTables_wrapper .sorting_desc div:after{content:"\f0d7"}
+.dataTables_wrapper .sorting:hover,.dataTables_wrapper .sorting_asc,.dataTables_wrapper .sorting_desc{background-color:#049cdb}
+.dataTables_wrapper:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.dataTables_wrapper label input,.dataTables_wrapper label select{display:inline;margin:2px;width:auto}
+
+
+.widget_hwim{padding-top:1em;}
+.widget_hwim img{border:1px solid #25358E}
+
+
+
+ol.commentlist,ul.children{margin:0;padding:0;list-style:none;width:100%;float:left;}
+ul.children{float:right;width:88%;margin-top:1em}
+li.comment{width:100%;float:left;margin-bottom:1.625em;clear:both}
+
+ul.children li.comment {outline:none}
+div.comment,div.author-inner{}
+div.comment-author{width:15%;float:right;margin-left:1.063829787234043%;padding-right:1.063829787234043%}
+div.comment-author p{text-align:center}
+div.comment-body{padding:0 1.063829787234043%;}
+div.comment-body p{font-size:1em !important;font-weight:normal !important}
+p.comment-awaiting-moderation{padding:0 1.063829787234043%;color:#900}
+div.reply{padding-left:14%;float:left;clear:both;padding-bottom:1.625em;margin-bottom:2em;padding-right:1em}
+div#comment div.inner{padding:0}
+h4.fn{width:100%;display:block;text-align:center;padding-top:0;margin-top:0;float:left;padding-top:0.5em}
+div.comment-meta{font-weight:bold;border-bottom:none;border-top:none;display:block;width:100%;float:right;margin-bottom:1em;padding:1.063829787234043% 0;padding-top:0;font-size:1em;background-color:#eee}
+div.comment-meta p{margin-bottom:0.75em;padding:1.063829787234043%;padding-top:0.5em;}
+span.post-time{font-weight:normal;text-align:right;float:right;font-size:75%;padding-top:0.5em}
+span.author-link{float:left;padding-top:0.25em;font-size:75%}
+.comment-author{width:10%;max-width:10%;float:left !important;margin:0}
+
+.comment-form{background:#F7F7F7;background-position:right top;background-repeat:no-repeat;margin-bottom:2em;padding:1.063829787234043%}
+h3.comment-reply-title{background:#F7F7F7;padding:0.5em 1.063829787234043%;margin:0;clear:both}
+p.comment-notes{padding:0;font-weight:bold}
+.comment-fields{width:50%;}
+.comment-fields div{margin-bottom:1em}
+.comment-fields label,.comment-form-comment label{display:block;width:100%;margin-bottom:0.5em;font-weight:bold;font-size:1.2em}
+ .comment-fields input{width:100%;height:2em;padding-left:0.5em}
+ .required{color:#900}
+ #comment{width:100%;height:12em;padding:0;margin:0}
+ .comment-meta p{padding:0}
+ .comment-body{width:85%;float:right;}
+ .comment-body p{padding-right:1em}
+ .commentlist .bypostauthor{}
+ .commentlist li ul.children li.bypostauthor{}
+ 
+
+
+footer h3{color:#fff}
+
+
+div.shuttle article.listing{border:1px solid #25358E;margin-bottom:1em}
+
+#branding{display:none}
+
+.homecontent .dpArticleShare {display:none !important}
+
+nav.socmed{float:right;margin:0;padding:0.4em 0 0 0;background:none;width:165px}
+
+.socIcon {font-family:Arial, Helvetica, sans-serif;line-height:100%;margin: 0px !important;position: absolute !important;top: auto;left: 0px !important;list-style: none !important;padding: 0 !important;}
+.socIcon * {-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.socIcon.horizontal-top li,.socIcon.horizontal-bottom li {padding: 0 0 0.3em 0.3em !important;}
+.socIcon.horizontal-top {position: relative !important;clear: both;}
+.socIcon.horizontal-top li{float: right;}
+.socIcon.horizontal-top li:first-child {padding-left: 0 !important;}
+.socIcon.color li {opacity: .8;	}
+.socIcon.color li:hover {opacity: 1;}
+.socIcon li a {cursor: pointer;text-decoration: none;}
+.socIcon li .icon {background-position: 50% 50%;background-repeat: no-repeat;background-color: #ccc;float: left;display: block;width: 32px;height: 32px;padding: 0;}
+.socIcon li .icon-dpShareIcon-yt {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/youtube.png);}
+.socIcon li:hover .icon-dpShareIcon-yt,.socIcon.color li .icon-dpShareIcon-yt {background-color: #DF2826;}
+.socIcon li .icon-dpShareIcon-rss {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/rss.png);}
+.socIcon li:hover .icon-dpShareIcon-rss,.socIcon.color li .icon-dpShareIcon-rss {background-color: #FF3300;}
+.socIcon li .icon-dpShareIcon-fl {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/flickr.png);}
+.socIcon li:hover .icon-dpShareIcon-fl,.socIcon.color li .icon-dpShareIcon-fl {background-color: #FF0084;}
+.socIcon li .icon-dpShareIcon-sc {background-image:url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/soundcloud.png);}
+.socIcon li:hover .icon-dpShareIcon-sc,.socIcon.color li .icon-dpShareIcon-sc {background-color: #FF3300;}
+.socIcon li .icon-dpShareIcon-ig {background-image:url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/instagram.png);
+}
+.socIcon li:hover .icon-dpShareIcon-ig,.socIcon.color li .icon-dpShareIcon-ig {background-color: #3C6B92;}
+.socIcon li .icon-dpShareIcon-fb {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/fb.png);}
+.socIcon li:hover .icon-dpShareIcon-fb,.socIcon.color li .icon-dpShareIcon-fb {background-color: #3b5998;margin-right:0.3em}
+.socIcon li .icon-dpShareIcon-facebook_like {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/like.png);}
+.socIcon li:hover .icon-dpShareIcon-facebook_like {background-color: #3b5998;}
+.socIcon li .icon-dpShareIcon-tw {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/tw.png);}
+.socIcon li:hover .icon-dpShareIcon-tw,.socIcon.color li .icon-dpShareIcon-tw {background-color: #00bef6;}
+.socIcon li .icon-dpShareIcon-g {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/g.png);}
+.socIcon li:hover .icon-dpShareIcon-g,.socIcon.color li .icon-dpShareIcon-g {background-color: #ce3d2b;}
+.socIcon li .icon-dpShareIcon-comment {background-image:url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/comments.png);}
+.socIcon li:hover .icon-dpShareIcon-comment, .socIcon.color li .icon-dpShareIcon-comment {
+background-color: #666;}
+.socIcon.dark li:hover .icon-dpShareIcon-comment {background-color: #222;}
+.socIcon li .icon-dpShareIcon-print {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/print.png);
+}
+.socIcon li:hover .icon-dpShareIcon-print,.socIcon.color li .icon-dpShareIcon-print {background-color: #666;}
+.socIcon.dark li:hover .icon-dpShareIcon-print {background-color: #222;}
+.socIcon li .icon-dpShareIcon-linkedin {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/linkedin.png);}
+.socIcon li:hover .icon-dpShareIcon-linkedin,.socIcon.color li .icon-dpShareIcon-linkedin {
+	background-color: #007ab9;}
+
+.socIcon li .icon-dpShareIcon-pinterest {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/pinterest.png);}
+.socIcon li:hover .icon-dpShareIcon-pinterest,.socIcon.color li .icon-dpShareIcon-pinterest {background-color: #cb2028;}
+.socIcon li .icon-dpShareIcon-delicious {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/delicious.png);}
+.socIcon li:hover .icon-dpShareIcon-delicious,.socIcon.color li .icon-dpShareIcon-delicious {background-color: #3399fd;
+}
+.socIcon li .icon-dpShareIcon-stumbleupon {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/stumbleupon.png);
+}
+.socIcon li:hover .icon-dpShareIcon-stumbleupon,.socIcon.color li .icon-dpShareIcon-stumbleupon {background-color: #eb4923;
+}
+.socIcon li .icon-dpShareIcon-tumblr {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/tumblr.png);
+}
+.socIcon li:hover .icon-dpShareIcon-tumblr,.socIcon.color li .icon-dpShareIcon-tumblr {background-color: #314e6c;}
+.socIcon li .icon-dpShareIcon-digg {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/digg.png);
+}
+.socIcon li:hover .icon-dpShareIcon-digg,.socIcon.color li .icon-dpShareIcon-digg {
+	background-color: #719dca;}
+.socIcon li .icon-dpShareIcon-reddit {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/reddit.png);}
+.socIcon li:hover .icon-dpShareIcon-reddit,.socIcon.color li .icon-dpShareIcon-reddit {background-color: #acd4f8;}
+.socIcon li .icon-dpShareIcon-buffer {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/buffer.png);}
+.socIcon li:hover .icon-dpShareIcon-buffer,.socIcon.color li .icon-dpShareIcon-buffer {background-color: #303030;}
+.socIcon li .icon-dpShareIcon-vk {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/vk.png);}
+.socIcon li:hover .icon-dpShareIcon-vk,.socIcon.color li .icon-dpShareIcon-vk {background-color: #5a7ba6;}
+.socIcon li .icon-dpShareIcon-blogger {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/blogger.png);
+}
+.socIcon li:hover .icon-dpShareIcon-blogger,.socIcon.color li .icon-dpShareIcon-blogger {background-color: #ff9233;}
+.socIcon li .icon-dpShareIcon-email {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/email.png);
+}
+.socIcon li:hover .icon-dpShareIcon-email,.socIcon.color li .icon-dpShareIcon-email {background-color: #666;}
+.socIcon.dark li:hover .icon-dpShareIcon-email {background-color: #222;}
+.socIcon li .icon-dpShareIcon-more {background-image: url(http://theshuttle.org.uk/wp-content/plugins/dpArticleShare/images/icons/more.png);
+}
+.socIcon li:hover .icon-dpShareIcon-more,.socIcon.color li .icon-dpShareIcon-more {background-color: #666;}
+form.search-form{float:left;background:#fff;margin-bottom:1em;width:99.2%;display:block}
+form.search-form {border:1px solid #eee;padding:0.5em 0 1em 0}
+div.search-inner{width:90%;margin:0.5em auto;}
+form.search-form input.search-field{width:65%;float:left;border-radius:0.5em;background-color:#eee;border:1px solid silver;font-size:0.7em;height:2em}
+form.search-form input.search-submit{width:33%;float:right;border-radius:0.5em;border:1px solid silver;font-size:0.7em;height:2em}
+form.search-form input.search-submit:hover{cursor:pointer}
+ul.xoxo div.textwidget{float:left;width:100%}
+aside ul.xoxo{background-color:#fff}
+article{border-bottom:1px solid #eee}
+aside ul li li{background-color:#eee !important }
+blockquote {background: #f9f9f9;border-left: 1em solid #ccc;margin: 1.5em 1em;padding: 0.5em 1em;quotes: "\201C""\201D""\2018""\2019";font-size:0.9em;font-weight:normal}
+blockquote:before {color: #ccc;content: open-quote;font-size: 4em;line-height: 0.1em;margin-right: 0.25em;vertical-align: -0.4em;}
+blockquote p {display: inline;}
+
+main.account{width:100%}
+
+section.account-content{width:100%}
+
+div.accountbox{width:33%;margin:0 auto;background:#eee;outline:1px solid silver;margin-bottom:2em}
+div.accountbox div.inner{padding:1.5em}
+#registerform label{width:27%;display:inline-block}
+#registerform input{width:70%;}
+
+
+@media only screen and (max-width : 1100px) {
+	header div.header-branding{width:72%;float:left;}
+header div.header-utility{width:25%;float:right;}
+main.homemain{width:70%;float:left;background:transparent}
+
+aside.homeside{width:28%}
+div.homeside-left,div.homeside-right{width:100%;float:left}
+div.homeside-right{float:right}
+ 
+
+}
+
+
+
+
+
+@media print{
+  
+	@page{margin:1cm}
+	nav,footer,aside,header div.header-utility,div.art-share,div.taglist,div.pagination{display:none !important}
+	header div.header-branding, article.single div.res-featured,main,main.homemain{width:100%;float:none}
+  article.single div.res-featured{margin:1em auto}
+	header{position:relative;}
+	div.content{padding-top:0}
+  p a:after {
+content: " (" attr(href) ")";
+font-size: 80%;
+	word-wrap: break-word;
+}
+  
+h1{font-size:20pt !important}
+h2{font-size:18pt  !important}
+h3{font-size:16pt !important}
+h4{font-size:14pt !important}
+h5{font-size:12pt !important}
+h6{font-size:10pt !important}
+p{font-size:10pt !important}
+  
+	
+	}

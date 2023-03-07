@@ -1,0 +1,192 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "WP Super Snow (Falling Snow, Customizable)"
+msgstr ""
+
+#. Short description.
+msgid "Customizable falling snow effect for any holiday or Christmas site."
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #1"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #2"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #3"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #4"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #5"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #6"
+msgstr ""
+
+#. Screenshot description.
+msgid "WP Super Snow Screenshot #7"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Beautiful falling snow plugin for any WordPress holiday or Christmas site."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This is an awesome free Christmas snow falling plugin with jQuery and CSS3; very lightweight. You can add falling snow flakes to your website and customize these snow flakes using various configuration options in your WordPress Dashboard."
+msgstr ""
+
+#. Found in installation header.
+msgid "WP Super Snow is Very Easy to Install"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the <code>/wp-super-snow</code> folder to your <code>/wp-content/plugins/</code> directory."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the Plugins menu in WordPress®."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to the <strong>WP Super Snow</strong> panel &amp; configure."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Now requires PHP v5.4+."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested for compatibility w/ WordPress v4.3, and 4.4+."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "General cleanup and organizational improvements in code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Back-end UI enhancements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Initial Release.</strong> Just in time for the holiday season :-)"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I change the size of each snow flake (and other options)?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Does this plugin load a bunch of extra files that will slow down my site?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Does this falling snow plugin allow for custom snowflake images?"
+msgstr ""
+
+#. Found in faq header.
+msgid "CPU performance; should I be concerned?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What browsers are supported by this falling snow plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Are there any other requirements for this plugin to function properly?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes, please check your Dashboard under: <strong>WP Super Snow -› Virtual Snow Blower</strong>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No, this plugin pulls in ONE simple jQuery (JavaScript) file — very small. It delivers beautiful falling snowflakes using only this one JavaScript file (and whatever snowflake images you choose). Please check your Dashboard under: <strong>WP Super Snow -› Virtual Snow Blower</strong>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you increase the number of snowlfakes — yes. WP Super Snow can eat up a lot of CPU, even on modern computers when there are a large number of elements being moved around the screen at once. The default configuration that comes with WP Super Snow may have notably lower CPU utilization as it doesn't include a lot of extras, and the default number of snowflakes is reduced to improve speed. Consider lowering the speed; and also the amount of snowflakes to help reduce CPU use even further."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "note: WP Super Snow will attempt to use GPU-based hardware acceleration to animate the snow. Having GPU acceleration can help in reducing CPU utilization. Most modern browsers will support this; WP Super Snow takes advantage whenever it's possible (automatically)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Compatible w/ IE 10+, IE Mobile 10+, Firefox 5+, Chrome 4+, Safari 4+, iOS Safari 3.2+, Android 2.1+, Android Chrome 31+, Android Firefox 25+, BlackBerry 7+, Opera 12+, Opera Mobile 12.1+; and many other modern browsers. See also: <a href=\"http://caniuse.com/css-animation\">http://caniuse.com/css-animation</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "note: If you take a look at <strong>Dashboard -› WP Super Snow -› Forecast / Conditions</strong>; you can enable WP Super Snow for mobile devices if you like. However, please be WARNED; WP Super Snow is known to reduce battery life on mobile devices. Also, on older cell phones this can cause problems for their processors. By default, WP Super Snow is not loaded for mobile devices (recommended behavior)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "This plugin requires jQuery (comes w/ WordPress). If you have WordPress, you already have jQuery. This plugin also requires PHP v5.3 (or higher); please check with your hosting company about this. See also: the list of supported browsers above."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "License"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Credits / Additional Acknowledgments"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Translations"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "GPL License <a href=\"http://codex.wordpress.org/GPL\">http://codex.wordpress.org/GPL</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "WordPress® <a href=\"http://wordpress.org\">http://wordpress.org</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "GPL-Compatible License <a href=\"http://jquery.org/license\">http://jquery.org/license</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "jQuery <a href=\"http://jquery.com/\">http://jquery.com/</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "GPL-Compatible License <a href=\"http://getbootstrap.com/getting-started/#license-faqs\">http://getbootstrap.com/getting-started/#license-faqs</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Bootstrap <a href=\"http://getbootstrap.com/\">http://getbootstrap.com/</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "GPL-Compatible License <a href=\"http://fortawesome.github.io/Font-Awesome/license/\">http://fortawesome.github.io/Font-Awesome/license/</a>"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Font Awesome <a href=\"http://fortawesome.github.io/Font-Awesome/\">http://fortawesome.github.io/Font-Awesome/</a>"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Copyright: © 2013 <a href=\"http://websharks-inc.com/bizdev/\">WebSharks, Inc.</a> (coded in the USA)"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Released under the terms of the <a href=\"http://www.gnu.org/licenses/gpl-2.0.html\">GNU General Public License</a>."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid ""
+"This plugin comes with a POT file for easy translation.\n"
+"See: <code>/includes/translations/wp-super-snow.pot</code>"
+msgstr ""
