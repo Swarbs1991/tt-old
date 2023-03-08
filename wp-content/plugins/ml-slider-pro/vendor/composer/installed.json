@@ -2,30 +2,30 @@
     "packages": [
         {
             "name": "davidanderson684/simba-plugin-manager-updater",
-            "version": "v1.8.15",
-            "version_normalized": "1.8.15.0",
+            "version": "v1.8.16",
+            "version_normalized": "1.8.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DavidAnderson684/simba-plugin-manager-updater.git",
-                "reference": "0a5e5c14c31a2a7990ebf6173ee15b59dd1dbd84"
+                "reference": "508964096e1df4aecd1bddb1b0efbf332ea0cb6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DavidAnderson684/simba-plugin-manager-updater/zipball/0a5e5c14c31a2a7990ebf6173ee15b59dd1dbd84",
-                "reference": "0a5e5c14c31a2a7990ebf6173ee15b59dd1dbd84",
+                "url": "https://api.github.com/repos/DavidAnderson684/simba-plugin-manager-updater/zipball/508964096e1df4aecd1bddb1b0efbf332ea0cb6a",
+                "reference": "508964096e1df4aecd1bddb1b0efbf332ea0cb6a",
                 "shasum": ""
             },
             "require": {
                 "yahnis-elsts/plugin-update-checker": "4.13.*"
             },
-            "time": "2022-09-30T10:10:29+00:00",
+            "time": "2023-03-07T14:06:45+00:00",
             "type": "library",
             "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "description": "This class is an updates checker and UI for WordPress plugins that are hosted using the Simba Plugin Manager plugin",
             "support": {
                 "issues": "https://github.com/DavidAnderson684/simba-plugin-manager-updater/issues",
-                "source": "https://github.com/DavidAnderson684/simba-plugin-manager-updater/tree/v1.8.15"
+                "source": "https://github.com/DavidAnderson684/simba-plugin-manager-updater/tree/v1.8.16"
             },
             "install-path": "../davidanderson684/simba-plugin-manager-updater"
         },

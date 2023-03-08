@@ -3,7 +3,7 @@
         'name' => 'metaslider/metaslider-pro',
         'pretty_version' => 'dev-develop',
         'version' => 'dev-develop',
-        'reference' => '2e113dfef6f286e21ab72c5e8467ebada9bce1bc',
+        'reference' => '118f4c70ed842e69e7fe2f480aba5a8e68d84795',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'davidanderson684/simba-plugin-manager-updater' => array(
-            'pretty_version' => 'v1.8.15',
-            'version' => '1.8.15.0',
-            'reference' => '0a5e5c14c31a2a7990ebf6173ee15b59dd1dbd84',
+            'pretty_version' => 'v1.8.16',
+            'version' => '1.8.16.0',
+            'reference' => '508964096e1df4aecd1bddb1b0efbf332ea0cb6a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../davidanderson684/simba-plugin-manager-updater',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'metaslider/metaslider-pro' => array(
             'pretty_version' => 'dev-develop',
             'version' => 'dev-develop',
-            'reference' => '2e113dfef6f286e21ab72c5e8467ebada9bce1bc',
+            'reference' => '118f4c70ed842e69e7fe2f480aba5a8e68d84795',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

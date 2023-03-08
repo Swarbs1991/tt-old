@@ -453,7 +453,7 @@ class MetaSliderThemeEditor
 
             if ($sliders = $this->get_sliders_for_preview()) {
                 echo "<form style='position: absolute; right: 20px; top: 0;' accept-charset='UTF-8' action='?page=metaslider-theme-editor' method='post'>";
-                echo "<input type='hidden' name='theme_slug' value=" . esc_attr($this->theme_slug) . "' />";
+                echo "<input type='hidden' name='theme_slug' value='". esc_attr($this->theme_slug) ."' />";
                 echo "<select name='slider_id'>";
                 foreach ($sliders as $slider) {
                     $selected = $slider['id'] == $this->slider_id ? 'selected=selected' : '';

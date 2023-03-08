@@ -115,9 +115,6 @@ wp.media.view.MediaFrame.Post = oldMediaFrame.extend({
                 priority: 999,
                 toolbar: 'add-html-overlay-slide',
                 filterable: 'image',
-                library: wp.media.query({
-                    type: 'image'
-                }),
                 multiple: false,
                 editable: true,
                 allowLocalEdits: true,

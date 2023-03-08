@@ -5,7 +5,7 @@
  * Plugin Name: MetaSlider
  * Plugin URI:  https://www.metaslider.com
  * Description: Easy to use slideshow plugin. Create SEO optimised responsive slideshows with Nivo Slider, Flex Slider, Coin Slider and Responsive Slides.
- * Version:     3.28.3
+ * Version:     3.29.0
  * Author:      MetaSlider
  * Author URI:  https://www.metaslider.com
  * License:     GPL-2.0+
@@ -47,7 +47,7 @@ if (! class_exists('MetaSliderPlugin')) {
          *
          * @var string
          */
-        public $version = '3.28.3';
+        public $version = '3.29.0';
 
         /**
          * Pro installed version number
@@ -187,6 +187,7 @@ if (! class_exists('MetaSliderPlugin')) {
                 'simple_html_dom' => METASLIDER_PATH . 'inc/simple_html_dom.php',
                 'metaslider_notices' => METASLIDER_PATH . 'admin/Notices.php',
                 'metaslider_admin_pages' => METASLIDER_PATH . 'admin/Pages.php',
+                'metaslider_admin_table' => METASLIDER_PATH . 'admin/Table.php',
                 'metaslider_slideshows' => METASLIDER_PATH . 'admin/Slideshows/Slideshows.php',
                 'metaslider_settings' => METASLIDER_PATH . 'admin/Slideshows/Settings.php',
                 'metaslider_slide' => METASLIDER_PATH . 'admin/Slideshows/slides/Slide.php',
@@ -427,6 +428,8 @@ if (! class_exists('MetaSliderPlugin')) {
             $title = metaslider_pro_is_active() ? 'MetaSlider Pro' : 'MetaSlider';
 
             $this->admin->add_page($title, 'metaslider');
+            $this->admin->add_page(__('Home', 'ml-slider'), 'metaslider', 'metaslider');
+            $this->admin->add_page(__('Quick Start', 'ml-slider'), 'metaslider-start', 'metaslider');
             $this->admin->add_page(__('Settings & Help', 'ml-slider'), 'metaslider-settings', 'metaslider');
 
             if (metaslider_user_sees_upgrade_page()) {
@@ -917,9 +920,52 @@ if (! class_exists('MetaSliderPlugin')) {
 
             $id = MetaSlider_Slideshows::create();
 
-            wp_redirect(admin_url("admin.php?page=metaslider&id={$id}"));
-            exit;
+            if (isset($_GET['metaslider_add_sample_slides'])) {
+                $slideInstance = new MetaSlider_Slideshows();
+                $sampleType = sanitize_key($_GET['metaslider_add_sample_slides']);
+                if ($sampleType == 'carousel') {
+                    $settings = array(
+                        'type' => 'flex',
+                        'printCss' => 'on',
+                        'printJs' => 'on',
+                        'width' => 1200,
+                        'height' => 600,
+                        'center' => 'on',
+                        'carouselMode' => 'on',
+                        'autoPlay' => 'on',
+                        'fullWidth' => 'on',
+                        'noConflict' => 'on'
+                    );
+                    $sampleId = $slideInstance->save($id, $settings);
+                } elseif ($sampleType == 'withcaption') {
+                    $settings = array(
+                        'type' => 'flex',
+                        'printCss' => 'on',
+                        'printJs' => 'on',
+                        'width' => 400,
+                        'height' => 400,
+                        'center' => 'on',
+                        'carouselMode' => 'on',
+                        'autoPlay' => 'on',
+                        'fullWidth' => 'on',
+                        'noConflict' => 'on'
+                    );
+                    $sampleId = $slideInstance->save($id, $settings);
+
+                    $themeInstance = new MetaSlider_Themes();
+                    $outlineTheme = $themeInstance->get_theme_object($id,'outline');
+                    $setTheme = $themeInstance->set($id, $outlineTheme);
+                } else {
+                    $sampleId = $id;
+                    $sampleType = "";
+                }
+
+                wp_redirect(esc_url_raw(admin_url("admin.php?page=metaslider&id={$sampleId}&metaslider_add_sample_slides={$sampleType}")));
+            } else {
+                wp_redirect(esc_url_raw(admin_url("admin.php?page=metaslider&id={$sampleId}")));
+            }
         }
+
 
 
         /**
@@ -1998,7 +2044,7 @@ if (! class_exists('MetaSliderPlugin')) {
                                                             'label' => esc_html__("Easing", "ml-slider"),
                                                             'class' => 'option flex',
                                                             'helptext' => esc_html__(
-                                                                "Animation easing effect",
+                                                                "Easing is only available with the 'Slide' transition setting",
                                                                 "ml-slider"
                                                             ),
                                                             'value' => $this->slider->get_setting('easing'),

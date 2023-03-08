@@ -2,7 +2,7 @@
 
 Requires at least: 4.6
 Tested up to: 6.1
-Stable tag: 2.20.0
+Stable tag: 2.21.0
 Requires PHP: 5.6
 
 Extends MetaSlider, adding features such as video slides, layer slides and include additional CSS.
@@ -11,6 +11,11 @@ Extends MetaSlider, adding features such as video slides, layer slides and inclu
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.21.0] - 07 Mar, 2023 =
+
+* FIXED: Fixed Preview button error, #87, #85;
+* FIXED: Fixed the layer slides not finding local videos, #84;
 
 = [2.20.0] - 01 Dec, 2022 =
 
